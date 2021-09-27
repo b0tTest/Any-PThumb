@@ -370,7 +370,7 @@ async def notify(update, time_gap):
     
 @pyrogram.Client.on_callback_query()
 async def button(bot, update):
-  elif update.data == "close":
+  if update.data == "close":
     await update.message.delete()
     await update.message.reply_to_message.delete()
     
