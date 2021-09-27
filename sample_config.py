@@ -47,5 +47,8 @@ class Config(object):
         TIME_GAP = None
         logger.warning("Give the timegap in seconds. Dont use letters 😑")
     TIME_GAP_STORE = {}
+    
+    # Sql Database url
+    DB_URI = os.environ.get("DATABASE_URL", "")
 
 
