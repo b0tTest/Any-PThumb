@@ -342,19 +342,19 @@ async def echo(bot, update):
         reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
         
         await fmsg.delete()
-        await update.reply_text(
-            text=message_text,
+      #  await update.reply_text(
+          #  text=message_text,
+          #  reply_markup=reply_markup,
+          #  parse_mode="html",
+           # quote=True
+        #)
+        await bot.send_message(
+            chat_id=update.chat.id,
+            text=message_text,#Translation.FORMAT_SELECTION.format(""),
             reply_markup=reply_markup,
             parse_mode="html",
-            quote=True
+            reply_to_message_id=update.message_id
         )
-       # await bot.send_message(
-           # chat_id=update.chat.id,
-          #  text=Translation.FORMAT_SELECTION.format(""),
-           # reply_markup=reply_markup,
-         #   parse_mode="html",
-           # reply_to_message_id=update.message_id
-      #  )
 ###############################
 async def notify(update, time_gap):
     await asyncio.sleep(30)
