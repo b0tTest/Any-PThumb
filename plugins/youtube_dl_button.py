@@ -19,7 +19,7 @@ else:
 from datetime import datetime
 from hachoir.parser import createParser
 from hachoir.metadata import extractMetadata
-from pyrogram.types import InputMediaPhoto
+from pyrogram import InputMediaPhoto
 
 
 from translation import Translation
