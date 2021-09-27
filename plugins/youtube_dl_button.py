@@ -9,6 +9,7 @@ import json
 import os
 import shutil
 import time
+import pyrogram
 
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
@@ -19,6 +20,7 @@ from datetime import datetime
 from hachoir.parser import createParser
 from hachoir.metadata import extractMetadata
 from pyrogram.types import InputMediaPhoto
+
 
 from translation import Translation
 from helper_funcs.database import thumb
