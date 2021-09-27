@@ -209,6 +209,10 @@ async def echo(bot, update):
                         pyrogram.InlineKeyboardButton(
                             "📁" + format_ext + " " + approx_file_size + " ",
                             callback_data=(cb_string_file).encode("UTF-8")
+                        ),
+                        pyrogram.InlineKeyboardButton(
+                            "Close",
+                            callback_data="close"
                         )
                     ]
                     """if duration is not None:
