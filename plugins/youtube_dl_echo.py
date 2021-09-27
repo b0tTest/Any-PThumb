@@ -315,6 +315,9 @@ async def echo(bot, update):
                     update.chat.id
                 )
         await fmsg.delete()
+        inline_keyboard.append([pyrogram.InlineKeyboardButton("✖️ CLOSE ✖️",callback_data="close")])
+        reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
+        
         message_text = Translation.FORMAT_SELECTION.format(thumbnail) + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD
         await bot.send_message(
             chat_id=update.chat.id,
@@ -345,8 +348,8 @@ async def echo(bot, update):
                 callback_data="close")
         ])
         #message_text = Translation.FORMAT_SELECTION.format("")
-       ## inline_keyboard.append([pyrogram.InlineKeyboardButton("✖️ CLOSE ✖️",callback_data="close")])
-        #reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
+        inline_keyboard.append([pyrogram.InlineKeyboardButton("✖️ CLOSE ✖️",callback_data="close")])
+        reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
         
         await fmsg.delete()
       #  await update.reply_text(
