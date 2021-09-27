@@ -319,7 +319,7 @@ async def echo(bot, update):
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.FORMAT_SELECTION.format(thumbnail) + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
-            reply_markup=(BUTTONS, reply_markup),
+            reply_markup=reply_markup,
             parse_mode="html",
             reply_to_message_id=update.message_id
         )
@@ -358,7 +358,7 @@ async def echo(bot, update):
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.FORMAT_SELECTION.format(""),
-            reply_markup=BUTTONS,#reply_markup,
+            reply_markup=reply_markup,
             parse_mode="html",
             reply_to_message_id=update.message_id
         )
@@ -369,7 +369,7 @@ async def notify(update, time_gap):
     await asyncio.sleep(time_gap)
     await update.reply_text("__You can send New Link Now 😌__")     
     
-BUTTONS = InlineKeyboardMarkup(
+reply_markup = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton(' ⭕ Close ⭕', callback_data="close")
         ]]
