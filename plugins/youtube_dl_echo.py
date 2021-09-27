@@ -364,3 +364,13 @@ async def notify(update, time_gap):
     await update.reply_text("Please wait 30 more second before Next Request")
     await asyncio.sleep(time_gap)
     await update.reply_text("__You can send New Link Now 😌__")     
+    
+    
+    
+    
+@pyrogram.Client.on_callback_query()
+async def button(bot, update):
+  elif update.data == "close":
+    await update.message.delete()
+    await update.message.reply_to_message.delete()
+    
