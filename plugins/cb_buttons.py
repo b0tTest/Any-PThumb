@@ -48,6 +48,8 @@ async def button(bot, update):
         return
     # logger.info(update)
     cb_data = update.data
+    if cb_data == "close":
+        await update.message.delete()
     if ":" in cb_data:
         # unzip formats
         extract_dir_path = Config.DOWNLOAD_LOCATION + \
