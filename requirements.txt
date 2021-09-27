@@ -1,0 +1,44 @@
+aiohttp
+beautifulsoup4
+hachoir
+numpy
+Pillow
+
+git+https://github.com/TgRenameBot/ytdl
+#https://github.com/Esther-Lopez/py18/archive/master.zip
+
+#py v0.17.1
+#https://github.com/Esther-Lopez/Py-17.1/archive/asyncio-dev.zip
+####################################
+#py v0.16
+#https://github.com/Esther-Lopez/py-16/archive/asyncio.zip
+#py v0.18
+https://github.com/Esther-Lopez/Pyrogram-1.0.7/archive/refs/heads/asyncio.zip
+
+
+#git+https://github.com/Esther-Lopez/ytdl.git
+
+
+#https://github.com/MyTestBotZ/pyrogram/archive/asyncio-dev.zip
+#https://github.com/pyrogram/pyrogram/archive/asyncio-dev.zip
+#https://github.com/Mahesh0253/pyrogram/archive/asyncio.zip
+
+
+requests
+tgcrypto
+sqlalchemy==1.3.22
+psycopg2-binary
+feedparser
+
+
+#youtube-dl
+# git+git://github.com/MoviezHood/youtube-dl-2.git
+#git+git://github.com/MyTestBotZ/youtube-dl-2.git
+# git+https://github.com/ytdl-org/youtube-dl
+
+
+#git+https://github.com/Esther-Lopez/youtube-dl-1
+#git+https://github.com/prgofficial/YouTubeDL
+#git+https://github.com/lrvick/youtube-dl.git
+
+olefile
