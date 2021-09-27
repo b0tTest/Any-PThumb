@@ -324,14 +324,14 @@ async def youtube_dl_call_back(bot, update):
             if Config.SCREENSHOTS=="True":
                 if images is not None:
                     i = 0
-                    caption = ""
+                    caption = "🖼 ScreenShoted by @TG_ScreenShotBot"
                     if is_w_f:
                         caption = ""
                     for image in images:
                         if os.path.exists(image):
                             if i == 0:
                                 media_album_p.append(
-                                    InputMediaPhoto(
+                                    pyrogram.InputMediaPhoto(
                                         media=image,
                                         caption=caption,
                                         parse_mode="html"
@@ -339,7 +339,7 @@ async def youtube_dl_call_back(bot, update):
                                 )
                             else:
                                 media_album_p.append(
-                                    InputMediaPhoto(
+                                    pyrogram.InputMediaPhoto(
                                         media=image
                                     )
                                 )
