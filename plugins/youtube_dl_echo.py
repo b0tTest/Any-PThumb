@@ -338,7 +338,7 @@ async def echo(bot, update):
             )
         ])
         message_text = Translation.FORMAT_SELECTION.format("")
-        inline_keyboard.append([InlineKeyboardButton("✖️ CLOSE ✖️",callback_data="close")])
+        inline_keyboard.append([pyrogram.InlineKeyboardButton("✖️ CLOSE ✖️",callback_data="close")])
         reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
         
         await fmsg.delete()
