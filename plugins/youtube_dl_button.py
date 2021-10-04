@@ -21,6 +21,7 @@ from hachoir.parser import createParser
 from hachoir.metadata import extractMetadata
 #from pyrogram import InputMediaPhoto
 
+from pyrogram import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 
 from translation import Translation
 from helper_funcs.database import thumb
@@ -255,6 +256,7 @@ async def youtube_dl_call_back(bot, update):
                     # performer=response_json["uploader"],
                     # title=response_json["title"],
                     # reply_markup=reply_markup,
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⭕ Join Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')]]),
                     thumb=thumb_image_path,
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
@@ -271,6 +273,7 @@ async def youtube_dl_call_back(bot, update):
                     thumb=thumb_image_path,
                     caption=description,
                     parse_mode="HTML",
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⭕ Join Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')]]),
                     # reply_markup=reply_markup,
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
@@ -305,6 +308,7 @@ async def youtube_dl_call_back(bot, update):
                     width=width,
                     height=height,
                     supports_streaming=True,
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⭕ Join Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')]]),
                     # reply_markup=reply_markup,
                     thumb=thumb_image_path,
                     reply_to_message_id=update.message.reply_to_message.message_id,
