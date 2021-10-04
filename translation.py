@@ -129,7 +129,7 @@ You can use /rename command after receiving file to rename it with custom thumbn
     <i>Due to Overload, Only Channel Subscribers can use this Bot!🤷</i>
     """
     
-    SHOW_THUMB = "Use /deletethumbnail to clear this thumbnail."
-    NO_THUMB = "No saved thumbnails Found!!\n\nSend an image to save it as your thumbnail permanently."
+    SHOW_THUMB = "<b>Your Permanent Thumbnail ⤴️ \nUse /delthumb to clear this thumbnail</b>."
+    NO_THUMB = "<b>No saved thumbnails Found!!\n\nSend an image to save it as your thumbnail permanently.</b>"
     
 
