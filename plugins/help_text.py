@@ -130,7 +130,7 @@ async def button(bot, update):
 
 #---------------- Callback ----------------#
 @pyrogram.Client.on_callback_query()
-async def cb_handler(bot, update):
+async def button(bot, update):
     if update.data == "home":
         await update.message.edit_text(
             text=Text.START_TEXT.format(update.from_user.mention),
