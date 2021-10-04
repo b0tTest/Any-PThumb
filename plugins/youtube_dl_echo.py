@@ -30,6 +30,9 @@ from helper_funcs.timegap_check import timegap_check
 from helper_funcs.display_progress import humanbytes
 from helper_funcs.help_uploadbot import DownLoadFile
 
+from hachoir.metadata import extractMetadata
+from hachoir.parser import createParser
+
 from helper_funcs.database import *
 
 from pyrogram import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
@@ -310,6 +313,11 @@ async def echo(bot, update):
                     update.message_id,
                     update.chat.id
                 )
+                if os.path.exists(thumb_image_path):
+                    im = Image.open(thumb_image_path).convert("RGB")
+                    im.save(thumb_image_path.replace(".webp", ".jpg"), "jpeg")
+                else:
+                    thumb_image_path = None
         await fmsg.delete()
         await bot.send_message(
             chat_id=update.chat.id,
