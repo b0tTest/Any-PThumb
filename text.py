@@ -16,11 +16,13 @@ it can <b>UPLOAD almost all Direct Links to Telegram as File/Video</b>
 ┈┈┈••💙✿❤✿💚••┈┈┈
 """
     
-    HELP_TEXT = """How to Use me 🤔
+    HELP_TEXT = """<b>How to Use me 🤔</b>
     
-1. <b>Send url</b>
+1. <b>Send any url</b>
         <i> if you need custom File Name do Like this ☛ (Link|New Name with Extension).</i>
-2. <b>Send Custom Thumbnail </b>(Optional).
+
+2. <b>Send Custom Thumbnail </b>(Optional but Recommended).
+
 3. <b>Select the button.</b>
    » <b>SS+Video</b> - File as video with Screenshots
    » <b>SS+File</b>  - File with Screenshots
@@ -28,7 +30,15 @@ it can <b>UPLOAD almost all Direct Links to Telegram as File/Video</b>
    » <b>File</b>  - File without Screenshots
    
   <b> Thats it, I will Do Rest of it 😌</b>
-<b>check /about to Know about this bot</b>
+
+
+<i>
+⍟ View your thumbnail 
+    do /showthumb command
+
+⍟ Delete your thumbnail 
+    do /delthumb command
+</i>   
 """
     
     ABOUT_TEXT = """Hi {},
