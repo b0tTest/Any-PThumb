@@ -1,3 +1,4 @@
+import pyrogram
 from pyrogram import (
     Client,
     Filters,
@@ -47,12 +48,10 @@ it can <b>UPLOAD almost all Direct Links to Telegram as File/Video</b>
  
 All My Bots are hosted in free Server, if you Likes ma Works, & interested you donate some money it will be helpful for me to Pay my Internet Bills ☺️
 **For Donate:** Message ** @OO7ROBot **"""
-
     
     
     
-    
-START_BUTTONS = InlineKeyboardMarkup(
+    START_BUTTONS = InlineKeyboardMarkup(
         [[
        # InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')#,
        # InlineKeyboardButton('Creator', url='https://telegram.me/OO7ROBOT')
@@ -67,7 +66,7 @@ START_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('⛔️ Close', callback_data='close')
         ]]
     )
-HELP_BUTTONS = InlineKeyboardMarkup(
+    HELP_BUTTONS = InlineKeyboardMarkup(
         [[
         #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
         #],[
@@ -78,7 +77,7 @@ HELP_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('⛔️ Close', callback_data='close')
         ]]
     )
-ABOUT_BUTTONS = InlineKeyboardMarkup(
+    ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
         #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
         #],[
@@ -91,7 +90,7 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
     )    
 
 
-DONATE_BUTTONS = InlineKeyboardMarkup(
+    DONATE_BUTTONS = InlineKeyboardMarkup(
         [[
         #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
         #],[
@@ -104,6 +103,12 @@ DONATE_BUTTONS = InlineKeyboardMarkup(
     )    
         
           
+
+    
+    
+    
+    
+
     
     
     
