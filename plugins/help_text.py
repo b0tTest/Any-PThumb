@@ -133,25 +133,25 @@ async def button(bot, update):
 async def cb_handler(bot, update):
     if update.data == "home":
         await update.message.edit_text(
-            text=Translation.START_TEXT.format(update.from_user.mention),
+            text=Text.START_TEXT.format(update.from_user.mention),
             reply_markup=START_BUTTONS,
             disable_web_page_preview=True
         )
     elif update.data == "help":
         await update.message.edit_text(
-            text=Translation.HELP_TEXT,
+            text=Text.HELP_TEXT,
             reply_markup=HELP_BUTTONS,
             disable_web_page_preview=True
         )
     elif update.data == "donate":
         await update.message.edit_text(
-            text=Translation.DONATE_USER,
+            text=Text.DONATE_USER,
             reply_markup=DONATE_BUTTONS,
             disable_web_page_preview=True
         )
     elif update.data == "about":
         await update.message.edit_text(
-            text=Translation.ABOUT_TEXT,
+            text=Text.ABOUT_TEXT.format(update.from_user.first_name),
             reply_markup=ABOUT_BUTTONS,
             disable_web_page_preview=True
         )
@@ -164,7 +164,7 @@ async def cb_handler(bot, update):
         await update.message.delete()
         try:
             await update.message.reply_text(
-                text = "<b>✅ Rename Process Cancelled</b>"
+                text = "<b>✅  Process Cancelled</b>"
      )
         except:
             pass      
