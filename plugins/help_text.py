@@ -46,7 +46,7 @@ async def help_user(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Text.HELP_TEXT,
-        reply_markup=HELP_BUTTONS,
+        reply_markup=Text.HELP_BUTTONS,
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -77,7 +77,7 @@ async def start(bot, update):
         text=Text.START_TEXT.format(update.from_user.first_name),
         parse_mode="html",
         disable_web_page_preview=True,
-        reply_markup=START_BUTTONS,
+        reply_markup=Text.START_BUTTONS,
        # reply_markup=InlineKeyboardMarkup(
           #  [
              #   [
@@ -104,7 +104,7 @@ async def upgrade(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Text.DONATE_TEXT,
-        reply_markup=DONATE_BUTTONS,
+        reply_markup=Text.DONATE_BUTTONS,
         parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
@@ -115,7 +115,7 @@ async def about(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Text.ABOUT_TEXT.format(update.from_user.first_name),
-        reply_markup=ABOUT_BUTTONS,
+        reply_markup=Text.ABOUT_BUTTONS,
         #parse_mode="markdown",
         parse_mode="html",
         disable_web_page_preview=True,
@@ -130,101 +130,6 @@ async def button(bot, update):
 
 
 #---------------- Callback ----------------#
-@pyrogram.Client.on_callback_query()
-async def button(bot, update):
-    if "home" in update.data: # == "home":
-        await update.message.edit_text(
-            text=Text.START_TEXT.format(update.from_user.mention),
-            reply_markup=START_BUTTONS,
-            disable_web_page_preview=True
-        )
-    elif update.data == "help":
-        await update.message.edit_text(
-            text=Text.HELP_TEXT,
-            reply_markup=HELP_BUTTONS,
-            disable_web_page_preview=True
-        )
-    elif update.data == "donate":
-        await update.message.edit_text(
-            text=Text.DONATE_USER,
-            reply_markup=DONATE_BUTTONS,
-            disable_web_page_preview=True
-        )
-    elif update.data == "about":
-        await update.message.edit_text(
-            text=Text.ABOUT_TEXT.format(update.from_user.first_name),
-            reply_markup=ABOUT_BUTTONS,
-            disable_web_page_preview=True
-        )
-    elif update.data == "cancel":
-        await update.message.edit_text(
-            text="<code>Process Cancelled</code>",
-            disable_web_page_preview=True
-        )
-    elif update.data == "closeme":
-        await update.message.delete()
-        try:
-            await update.message.reply_text(
-                text = "<b>✅  Process Cancelled</b>"
-     )
-        except:
-            pass      
-    else:
-        await update.message.delete()        
-        
 
         
-        
-######## buttons #########        
-START_BUTTONS = InlineKeyboardMarkup(
-        [[
-       # InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')#,
-       # InlineKeyboardButton('Creator', url='https://telegram.me/OO7ROBOT')
-        #],[
-        InlineKeyboardButton('🖥 Other Bots', url='https://t.me/myTestbotz/15'),
-        InlineKeyboardButton('📝 Creator', url='https://telegram.me/OO7ROBOT')
-        ],[
-        InlineKeyboardButton('⚙ Help', callback_data='help'),
-        InlineKeyboardButton('📝 About', callback_data='about'),
-        InlineKeyboardButton('💰 Donate', callback_data='donate')
-        ],[
-        InlineKeyboardButton('⛔️ Close', callback_data='close')
-        ]]
-    )
-HELP_BUTTONS = InlineKeyboardMarkup(
-        [[
-        #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
-        #],[
-        InlineKeyboardButton('🏡 Home', callback_data='home'),
-        InlineKeyboardButton('📝 About', callback_data='about'),
-        InlineKeyboardButton('💰 Donate', callback_data='donate')
-        ],[
-        InlineKeyboardButton('⛔️ Close', callback_data='close')
-        ]]
-    )
-ABOUT_BUTTONS = InlineKeyboardMarkup(
-        [[
-        #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
-        #],[
-        InlineKeyboardButton('🏡 Home', callback_data='home'),
-        InlineKeyboardButton('⚙ Help', callback_data='help'),
-        InlineKeyboardButton('💰 Donate', callback_data='donate')
-        ],[
-        InlineKeyboardButton('⛔️ Close', callback_data='close')
-        ]]
-    )    
-
-
-DONATE_BUTTONS = InlineKeyboardMarkup(
-        [[
-        #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
-        #],[
-        InlineKeyboardButton('🏡 Home', callback_data='home'),
-        InlineKeyboardButton('⚙ Help', callback_data='help'),
-        InlineKeyboardButton('📝 About', callback_data='about')
-        ],[
-        InlineKeyboardButton('⛔️ Close', callback_data='close')
-        ]]
-    )    
-        
-        
+     
