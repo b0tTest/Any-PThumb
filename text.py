@@ -1,3 +1,11 @@
+from pyrogram import (
+    Client,
+    Filters,
+    CallbackQuery,
+    InlineKeyboardMarkup,
+    InlineKeyboardButton
+)
+
 class Text(object):
     START_TEXT = """<b>Hai {} </b>,
 a simple Telegram URL Upload Bot!
@@ -39,3 +47,63 @@ it can <b>UPLOAD almost all Direct Links to Telegram as File/Video</b>
  
 All My Bots are hosted in free Server, if you Likes ma Works, & interested you donate some money it will be helpful for me to Pay my Internet Bills ☺️
 **For Donate:** Message ** @OO7ROBot **"""
+
+    
+    
+    
+    
+START_BUTTONS = InlineKeyboardMarkup(
+        [[
+       # InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')#,
+       # InlineKeyboardButton('Creator', url='https://telegram.me/OO7ROBOT')
+        #],[
+        InlineKeyboardButton('🖥 Other Bots', url='https://t.me/myTestbotz/15'),
+        InlineKeyboardButton('📝 Creator', url='https://telegram.me/OO7ROBOT')
+        ],[
+        InlineKeyboardButton('⚙ Help', callback_data='help'),
+        InlineKeyboardButton('📝 About', callback_data='about'),
+        InlineKeyboardButton('💰 Donate', callback_data='donate')
+        ],[
+        InlineKeyboardButton('⛔️ Close', callback_data='close')
+        ]]
+    )
+HELP_BUTTONS = InlineKeyboardMarkup(
+        [[
+        #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
+        #],[
+        InlineKeyboardButton('🏡 Home', callback_data='home'),
+        InlineKeyboardButton('📝 About', callback_data='about'),
+        InlineKeyboardButton('💰 Donate', callback_data='donate')
+        ],[
+        InlineKeyboardButton('⛔️ Close', callback_data='close')
+        ]]
+    )
+ABOUT_BUTTONS = InlineKeyboardMarkup(
+        [[
+        #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
+        #],[
+        InlineKeyboardButton('🏡 Home', callback_data='home'),
+        InlineKeyboardButton('⚙ Help', callback_data='help'),
+        InlineKeyboardButton('💰 Donate', callback_data='donate')
+        ],[
+        InlineKeyboardButton('⛔️ Close', callback_data='close')
+        ]]
+    )    
+
+
+DONATE_BUTTONS = InlineKeyboardMarkup(
+        [[
+        #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
+        #],[
+        InlineKeyboardButton('🏡 Home', callback_data='home'),
+        InlineKeyboardButton('⚙ Help', callback_data='help'),
+        InlineKeyboardButton('📝 About', callback_data='about')
+        ],[
+        InlineKeyboardButton('⛔️ Close', callback_data='close')
+        ]]
+    )    
+        
+          
+    
+    
+    
