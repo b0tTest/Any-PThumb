@@ -136,9 +136,27 @@ async def button(bot, update):
     elif "=" in cb_data:
         await ddl_call_back(bot, update)
         
+    elif cb_data == "home":
+        await update.message.edit_text(
+            text=Text.START_TEXT.format(update.from_user.mention),
+            reply_markup=Text.START_BUTTONS,
+            disable_web_page_preview=True
+        )
     elif cb_data == "help":
         await update.message.edit_text(
             text=Text.HELP_TEXT,
             reply_markup=Text.HELP_BUTTONS,
             disable_web_page_preview=True
         )
+    elif cb_data == "donate":
+        await update.message.edit_text(
+            text=Text.DONATE_USER,
+            reply_markup=Text.DONATE_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif cb_data == "about":
+        await update.message.edit_text(
+            text=Text.ABOUT_TEXT.format(update.from_user.first_name),
+            reply_markup=Text.ABOUT_BUTTONS,
+            disable_web_page_preview=True
+        )    
