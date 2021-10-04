@@ -25,6 +25,7 @@ from sample_config import Config
 
 # the Strings used for this "thing"
 from translation import Translation
+from text import Text
 
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
@@ -43,7 +44,7 @@ async def help_user(bot, update):
     #TRChatBase(update.from_user.id, update.text, "/help")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.HELP_USER,
+        text=Text.HELP_TEXT,
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -71,7 +72,7 @@ async def start(bot, update):
    # TRChatBase(update.from_user.id, update.text, "/start")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(update.from_user.first_name),
+        text=Text.START_TEXT.format(update.from_user.first_name),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
@@ -94,13 +95,12 @@ async def start(bot, update):
     )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["upgrade"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["donate"]))
 async def upgrade(bot, update):
-    # logger.info(update)
-    #TRChatBase(update.from_user.id, update.text, "/upgrade")
+   
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.UPGRADE_TEXT,
+        text=Text.DONATE_TEXT,
         parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
@@ -110,7 +110,7 @@ async def upgrade(bot, update):
 async def about(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.About.format(update.from_user.first_name),
+        text=Text.ABOUT_TEXT.format(update.from_user.first_name),
         #parse_mode="markdown",
         parse_mode="html",
         disable_web_page_preview=True,
