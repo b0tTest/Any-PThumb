@@ -35,7 +35,7 @@ it can <b>UPLOAD almost all Direct Links to Telegram as File/Video</b>
 ✪ » Build Status : v3 </b>
 """
     
-    DONATE_USER = """**__Thanks for showing interest in donation.__**
+    DONATE_TEXT = """**__Thanks for showing interest in donation.__**
  
 All My Bots are hosted in free Server, if you Likes ma Works, & interested you donate some money it will be helpful for me to Pay my Internet Bills ☺️
 **For Donate:** Message ** @OO7ROBot **"""
