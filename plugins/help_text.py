@@ -13,6 +13,7 @@ import sqlite3
 from pyrogram import (
     Client,
     Filters,
+    CallbackQuery,
     InlineKeyboardMarkup,
     InlineKeyboardButton
 )
@@ -131,7 +132,7 @@ async def button(bot, update):
 #---------------- Callback ----------------#
 @pyrogram.Client.on_callback_query()
 async def button(bot, update):
-    if update.data == "home":
+    if "home" in update.data: # == "home":
         await update.message.edit_text(
             text=Text.START_TEXT.format(update.from_user.mention),
             reply_markup=START_BUTTONS,
