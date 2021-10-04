@@ -164,7 +164,7 @@ async def ddl_call_back(bot, update):
                     # performer=response_json["uploader"],
                     # title=response_json["title"],
                     # reply_markup=reply_markup,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⭕ Join Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')]]),import                   thumb=thumb_image_path,
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⭕ Join Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')]]),
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
@@ -180,7 +180,7 @@ async def ddl_call_back(bot, update):
                     thumb=thumb_image_path,
                     caption=description,
                     # reply_markup=reply_markup,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⭕ Join Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')]]),import                   reply_to_message_id=update.message.reply_to_message.message_id,
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⭕ Join Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')]]),#import                   reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
                         Translation.UPLOAD_START,
@@ -213,7 +213,7 @@ async def ddl_call_back(bot, update):
                     height=height,
                     supports_streaming=True,
                     # reply_markup=reply_markup,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⭕ Join Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')]]),import                   thumb=thumb_image_path,
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⭕ Join Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')]]),#import                   thumb=thumb_image_path,
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
