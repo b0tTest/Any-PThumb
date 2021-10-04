@@ -319,6 +319,9 @@ async def echo(bot, update):
                 else:
                     thumb_image_path = None
         await fmsg.delete()
+        inline_keyboard.append([pyrogram.InlineKeyboardButton("⭕ CLOSE ⭕",callback_data="close")])
+        reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
+        
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.FORMAT_SELECTION.format(thumbnail) + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
@@ -343,6 +346,7 @@ async def echo(bot, update):
                 callback_data=(cb_string_file).encode("UTF-8")
             )
         ])
+        inline_keyboard.append([pyrogram.InlineKeyboardButton("✖️ CLOSE BUTTON ✖️",callback_data="close")])
         reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
         await fmsg.delete()
         await bot.send_message(
