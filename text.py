@@ -35,12 +35,14 @@ it can <b>UPLOAD almost all Direct Links to Telegram as File/Video</b>
   
 <b>✪ » My Name : URLUploader bot
 ✪ » Creator : </b><a href="https://telegram.dog/oo7robot"> This Person </a>
-✪ » <b>Credits : Everyone in this journey
+✪ » <b>Channel : @MyTestBotZ
+✪ » Other Bots : @MyBotZList
+✪ » Credits : Everyone in this journey
 ✪ » Language : Python 3
 ✪ » Library : Pyrogram asyncio 
 ✪ » Cloned From : Spechide Source code
 ✪ » Source Code : </b> <a href="https://github.com"> click here </a>
-✪ »<b> Server : Heroku
+✪ » <b>Server : Heroku
 ✪ » Build Status : v3 </b>
 """
     
