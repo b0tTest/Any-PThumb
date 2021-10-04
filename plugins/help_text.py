@@ -167,3 +167,59 @@ async def cb_handler(bot, update):
     else:
         await update.message.delete()        
         
+
+        
+        
+######## buttons #########        
+START_BUTTONS = InlineKeyboardMarkup(
+        [[
+       # InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')#,
+       # InlineKeyboardButton('Creator', url='https://telegram.me/OO7ROBOT')
+        #],[
+        InlineKeyboardButton('🖥 Other Bots', url='https://t.me/myTestbotz/15'),
+        InlineKeyboardButton('📝 Creator', url='https://telegram.me/OO7ROBOT')
+        ],[
+        InlineKeyboardButton('⚙ Help', callback_data='help'),
+        InlineKeyboardButton('📝 About', callback_data='about'),
+        InlineKeyboardButton('💰 Donate', callback_data='donate')
+        ],[
+        InlineKeyboardButton('⛔️ Close', callback_data='close')
+        ]]
+    )
+HELP_BUTTONS = InlineKeyboardMarkup(
+        [[
+        #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
+        #],[
+        InlineKeyboardButton('🏡 Home', callback_data='home'),
+        InlineKeyboardButton('📝 About', callback_data='about'),
+        InlineKeyboardButton('💰 Donate', callback_data='donate')
+        ],[
+        InlineKeyboardButton('⛔️ Close', callback_data='close')
+        ]]
+    )
+ABOUT_BUTTONS = InlineKeyboardMarkup(
+        [[
+        #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
+        #],[
+        InlineKeyboardButton('🏡 Home', callback_data='home'),
+        InlineKeyboardButton('⚙ Help', callback_data='help'),
+        InlineKeyboardButton('💰 Donate', callback_data='donate')
+        ],[
+        InlineKeyboardButton('⛔️ Close', callback_data='close')
+        ]]
+    )    
+
+
+DONATE_BUTTONS = InlineKeyboardMarkup(
+        [[
+        #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
+        #],[
+        InlineKeyboardButton('🏡 Home', callback_data='home'),
+        InlineKeyboardButton('⚙ Help', callback_data='help'),
+        InlineKeyboardButton('📝 About', callback_data='about')
+        ],[
+        InlineKeyboardButton('⛔️ Close', callback_data='close')
+        ]]
+    )    
+        
+        
