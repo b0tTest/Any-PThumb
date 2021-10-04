@@ -150,7 +150,7 @@ async def button(bot, update):
         )
     elif cb_data == "donate":
         await update.message.edit_text(
-            text=Text.DONATE_USER,
+            text=Text.DONATE_TEXT,
             reply_markup=Text.DONATE_BUTTONS,
             disable_web_page_preview=True
         )
