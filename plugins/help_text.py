@@ -122,3 +122,48 @@ async def about(bot, update):
 async def button(bot, update):
       if 'DM' in update.data:
               await update.message.delete
+
+
+#---------------- Callback ----------------#
+@pyrogram.Client.on_callback_query()
+async def cb_handler(bot, update):
+    if update.data == "home":
+        await update.message.edit_text(
+            text=Translation.START_TEXT.format(update.from_user.mention),
+            reply_markup=START_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "help":
+        await update.message.edit_text(
+            text=Translation.HELP_TEXT,
+            reply_markup=HELP_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "donate":
+        await update.message.edit_text(
+            text=Translation.DONATE_USER,
+            reply_markup=DONATE_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "about":
+        await update.message.edit_text(
+            text=Translation.ABOUT_TEXT,
+            reply_markup=ABOUT_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "cancel":
+        await update.message.edit_text(
+            text="<code>Process Cancelled</code>",
+            disable_web_page_preview=True
+        )
+    elif update.data == "closeme":
+        await update.message.delete()
+        try:
+            await update.message.reply_text(
+                text = "<b>✅ Rename Process Cancelled</b>"
+     )
+        except:
+            pass      
+    else:
+        await update.message.delete()        
+        
