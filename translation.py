@@ -7,7 +7,6 @@ it can <b>UPLOAD almost all Direct Links to Telegram as File/Video</b>
 
 
 ┈┈┈••💙✿❤✿💚••┈┈┈
-<b>/help for More Details </b>
 """
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
@@ -24,9 +23,13 @@ or Use auto-generated <a href='{}'>📸</a> <b>Thumbnail.</b>"""
     DOWNLOAD_START = """<b>Downloading to my server 📥</b>
    
   <code>Please wait...⏳ 🙇🙇🙇
-  it takes time depend on File Size</code>"""
+  it takes time depend on File Size</code>
+  
+  <b>Note : if its Take too LonG ....set an Custom Thumbnail & Try Again</b>"""
     UPLOAD_START = """<b>Yay,File Download Successfully 😊</b>
-    <code>Now Uploading to Telegram 📤</code>"""
+    <code>Now Uploading to Telegram 📤</code>
+    
+ """
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations."
     AFTER_SUCCESSFUL_UPLOAD_MSG = """**Thank you for Using Me.** 
@@ -52,32 +55,33 @@ or Use auto-generated <a href='{}'>📸</a> <b>Thumbnail.</b>"""
     HELP_USER = """How to Use me 🤔
     
 1. <b>Send url</b>
-         if you need custom File Name do Like this ☛ (Link|New Name with Extension).
+        <i> if you need custom File Name do Like this ☛ (Link|New Name with Extension).</i>
 
 2. <b>Send Custom Thumbnail </b>(Optional).
 
 3. <b>Select the button.</b>
-   <b>SS+Video</b> - File as video with Screenshots
-  <b>SS+File</b>  - File with Screenshots
-   <b>Video</b>  - File as video without Screenshots
-   <b>File</b>  - File without Screenshots
+
+   » <b>SS+Video</b> - File as video with Screenshots
+   » <b>SS+File</b>  - File with Screenshots
+   » <b>Video</b>  - File as video without Screenshots
+   » <b>File</b>  - File without Screenshots
    
-   thats it, I will Do Rest of it 😌
+  <b> Thats it, I will Do Rest of it 😌</b>
 
 
 <b>check /about to Know about this bot</b>
 """
     About = """Hi {},
   
-<b>○ My Name : URLUploader bot
-○ Creator : <a href="https://telegram.dog/oo7robot"> This Person </a>
-○ Credits : Everyone in this journey
-○ Language : Python 3
-○ Library : Pyrogram asyncio 
-○ Cloned From : Spechide Source code
-○ Source Code : ☛ <a href="https://github.com"> click here </a>
-○ Server : Heroku
-○ Build Status : Beta v3 </b>
+<b>✪ » My Name : URLUploader bot
+✪ » Creator : </b><a href="https://telegram.dog/oo7robot"> This Person </a>
+✪ » <b>Credits : Everyone in this journey
+✪ » Language : Python 3
+✪ » Library : Pyrogram asyncio 
+✪ » Cloned From : Spechide Source code
+✪ » Source Code : </b> <a href="https://github.com"> click here </a>
+✪ »<b> Server : Heroku
+✪ » Build Status : v3 </b>
 
 """
 
