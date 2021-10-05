@@ -162,7 +162,13 @@ async def button(bot, update):
         )
     elif data == "cthumb":
         await update.message.edit_text(
-            text=Text.THUMBNAIL_HELP,
+            text=Text.THUMBNAIL_TEXT,
             disable_web_page_preview = True,
-            reply_markup=THUMBNAIL_BUTTONS
-     )   
+            reply_markup=Text.HBACK_BUTTONS
+     )
+     elif data == "cmd":
+        await update.message.edit_text(
+            text=Text.COMMAND_TEXT,
+            disable_web_page_preview = True,
+            reply_markup=Text.HBACK_BUTTONS
+     )  
