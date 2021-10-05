@@ -33,7 +33,7 @@ it can <b>UPLOAD almost all Direct Links to Telegram as File/Video</b>
 
 ➠ <a href="https://t.me/myTestbotz/73"> How to Download Gdrive files </a>
 
-➠ <a href="https://t.me/MyTestBotZ/349"> Fix Thumbnail issues - Temporary </a>
+➠ <a href="https://t.me/MyTestBotZ/349"> Temporary Fix Thumbnail issues </a>
 """
     
     ABOUT_TEXT = """Hi {},
