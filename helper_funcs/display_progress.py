@@ -45,14 +45,14 @@ async def progress_for_pyrogram(
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
         time_to_completion = TimeFormatter(milliseconds=time_to_completion)
 
-        progress =  "\n<b>Uploading......</b> \n{0}{1} \n".format(
+        progress =  "{0}{1}] \n".format(
             ''.join(["▰" for i in range(math.floor(percentage / 10))]),
             ''.join(["▱" for i in range(10 - math.floor(percentage / 10))])
             )
 
        
         newui = """
-╭─────ᴜᴘʟᴏᴀᴅɪɴɢ {5}% ─────〄
+╭─────ᴜᴘʟᴏᴀᴅɪɴɢ {5}% ────〄
 │
 ├📤 ᴜᴘʟᴏᴀᴅᴇᴅ : {0}
 │
@@ -64,7 +64,7 @@ async def progress_for_pyrogram(
 │
 ├ <b>© @AnyURLDLbot ❣️ </b>
 │
-╰─[▣▣▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢]""".format(
+╰─[""".format(
             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
@@ -77,9 +77,9 @@ async def progress_for_pyrogram(
         tmp = newui + progress
         try:
             await message.edit(
-                text="{}\n {}".format(
-                    ud_type,
-                    tmp
+                text="{}\n\n {}".format(
+                    tmp,
+                    ud_type
                 )
             )
         except:
