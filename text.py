@@ -31,29 +31,22 @@ it can <b>UPLOAD almost all Direct Links to Telegram as File/Video</b>
    
   <b> Thats it, I will Do Rest of it 😌</b>
 
-
-<i>
-⍟ View your thumbnail 
-    do /showthumb command
-
-⍟ Delete your thumbnail 
-    do /delthumb command
-</i>   
 """
     
     ABOUT_TEXT = """Hi {},
   
 <b>✪ » My Name : URLUploader bot
 ✪ » Creator : </b><a href="https://telegram.dog/oo7robot"> This Person </a>
-✪ » <b>Channel : @MyTestBotZ
-✪ » Other Bots : @MyBotZList
+✪ »<b> Channel : <a href="https://telegram.dog/MyTestBotZ"> @MyTestBotZ </a>
+✪ » Other Bots : <a href="https://telegram.dog/mybotzlist"> @MyBotZList </a>
 ✪ » Credits : Everyone in this journey
 ✪ » Language : Python 3
 ✪ » Library : Pyrogram asyncio 
 ✪ » Cloned From : Spechide Source code
 ✪ » Source Code : </b> <a href="https://github.com"> click here </a>
-✪ » <b>Server : Heroku
+✪ »<b> Server : Heroku
 ✪ » Build Status : v3 </b>
+
 """
     
     DONATE_TEXT = """<b>Thanks for showing interest in donation.</b>
