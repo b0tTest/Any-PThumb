@@ -56,12 +56,21 @@ it can <b>UPLOAD almost all Direct Links to Telegram as File/Video</b>
 ✪ » Build Status : v3 </b>
 """
     
-    DONATE_TEXT = """**__Thanks for showing interest in donation.__**
+    DONATE_TEXT = """<b>Thanks for showing interest in donation.</b>
  
 All My Bots are hosted in free Server, if you Likes ma Works, & interested you donate some money it will be helpful for me to Pay my Internet Bills ☺️
-**For Donate:** Message ** @OO7ROBot **"""
+<b>For Donate:</b> Message <b> @OO7ROBot </b>"""
     
+    THUMBNAIL_TEXT = """<b>Here Are The Available Commands In Custom Thumbnail </b>
     
+⦿ <i> Send A Photo To Set The Custom Thumbnail (its Permanent) </i>
+
+⦿ /showthumb : <i> For Checking The Current Thumbnail </i>
+        
+⦿ /delthumb : <i> For Deleting The Current Saved Thumbnail </i>
+    
+ 
+    """
     
     START_BUTTONS = InlineKeyboardMarkup(
         [[
@@ -113,7 +122,15 @@ All My Bots are hosted in free Server, if you Likes ma Works, & interested you d
         ],[
         InlineKeyboardButton('⛔️ Close', callback_data='close')
         ]]
-    )    
+    ) 
+    THUMBNAIL_BUTTONS = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('🔙 Back', callback_data = 'help'),
+                    InlineKeyboardButton('⛔ Close', callback_data = 'close')
+                ]
+            ]
+        )
         
           
 
