@@ -72,6 +72,24 @@ All My Bots are hosted in free Server, if you Likes ma Works, & interested you d
  
     """
     
+    COMMAND_TEXT = """<b>Available Commands</b>
+
+⍟ /start - <i>Checking Bot Online</i>
+
+⍟ /help - <i>For more help</i>
+
+⍟ /about - <i>For more about me</i>
+
+⍟ /donate - <i>Donations</i>
+
+⍟ /plan - <i>Plan details & user info<i>
+
+⍟ /showthumb - <i>To view current thumbnail</i>
+
+⍟ /delthumb - <i>To deleting current thumbnail</i>
+
+    """
+    
     START_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('📡Channel', url='https://telegram.me/MyTestBotZ'),
@@ -123,7 +141,7 @@ All My Bots are hosted in free Server, if you Likes ma Works, & interested you d
         InlineKeyboardButton('⛔️ Close', callback_data='close')
         ]]
     ) 
-    THUMBNAIL_BUTTONS = InlineKeyboardMarkup(
+    HBACK_BUTTONS = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton('🔙 Back', callback_data = 'help'),
