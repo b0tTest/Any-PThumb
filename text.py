@@ -65,11 +65,11 @@ All My Bots are hosted in free Server, if you Likes ma Works, & interested you d
     
     START_BUTTONS = InlineKeyboardMarkup(
         [[
-       # InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')#,
+        InlineKeyboardButton('📡Channel', url='https://telegram.me/MyTestBotZ'),
        # InlineKeyboardButton('Creator', url='https://telegram.me/OO7ROBOT')
         #],[
-        InlineKeyboardButton('🖥 Other Bots', url='https://t.me/myTestbotz/15'),
-        InlineKeyboardButton('📝 Creator', url='https://telegram.me/OO7ROBOT')
+        InlineKeyboardButton('🖥Botslist', url='https://t.me/myTestbotz/15'),
+        InlineKeyboardButton('👤 Creator', url='https://telegram.me/OO7ROBOT')
         ],[
         InlineKeyboardButton('⚙ Help', callback_data='help'),
         InlineKeyboardButton('📝 About', callback_data='about'),
@@ -80,8 +80,9 @@ All My Bots are hosted in free Server, if you Likes ma Works, & interested you d
     )
     HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        #InlineKeyboardButton(' ⭕ Updates Channel ⭕', url='https://telegram.me/MyTestBotZ')
-        #],[
+        InlineKeyboardButton('🖼️Custom Thumb', callback_data='cthumb'),
+        InlineKeyboardButton('❣️All Commands', callback_data='cmd')
+        ],[
         InlineKeyboardButton('🏡 Home', callback_data='home'),
         InlineKeyboardButton('📝 About', callback_data='about'),
         InlineKeyboardButton('💰 Donate', callback_data='donate')
