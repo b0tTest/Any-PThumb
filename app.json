@@ -51,7 +51,7 @@
       "description": "Log Channel ID",
       "value": "-100"
     },
-    "TIME_LIMIT": {
+    "TIME_GAP": {
       "description": "Set timeout for subprocess (In seconds)",
       "value": "0"
     },
