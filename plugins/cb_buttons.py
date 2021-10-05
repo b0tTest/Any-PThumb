@@ -159,4 +159,10 @@ async def button(bot, update):
             text=Text.ABOUT_TEXT.format(update.from_user.first_name),
             reply_markup=Text.ABOUT_BUTTONS,
             disable_web_page_preview=True
-        )    
+        )
+    elif data == "cthumb":
+        await update.message.edit_text(
+            text=Text.THUMBNAIL_HELP,
+            disable_web_page_preview = True,
+            reply_markup=THUMBNAIL_BUTTONS
+     )   
