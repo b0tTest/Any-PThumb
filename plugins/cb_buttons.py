@@ -160,13 +160,13 @@ async def button(bot, update):
             reply_markup=Text.ABOUT_BUTTONS,
             disable_web_page_preview=True
         )
-    elif data == "cthumb":
+    elif cb_data == "cthumb":
         await update.message.edit_text(
             text=Text.THUMBNAIL_TEXT,
             disable_web_page_preview = True,
             reply_markup=Text.HBACK_BUTTONS
      )
-    elif data == "cmd":
+    elif cb_data == "cmd":
         await update.message.edit_text(
             text=Text.COMMAND_TEXT,
             disable_web_page_preview = True,
