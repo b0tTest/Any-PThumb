@@ -166,7 +166,7 @@ async def button(bot, update):
             disable_web_page_preview = True,
             reply_markup=Text.HBACK_BUTTONS
      )
-     elif data == "cmd":
+    elif data == "cmd":
         await update.message.edit_text(
             text=Text.COMMAND_TEXT,
             disable_web_page_preview = True,
