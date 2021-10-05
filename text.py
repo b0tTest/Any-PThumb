@@ -75,7 +75,7 @@ All My Bots are hosted in free Server, if you Likes ma Works, & interested you d
 
 ⍟ /donate - <i>Donations</i>
 
-⍟ /plan - <i>Plan details & user info<i>
+⍟ /plan - <i>Plan details & user info</i>
 
 ⍟ /showthumb - <i>To view current thumbnail</i>
 
